@@ -15,7 +15,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
         {/* Customer Name */}
         <div className="mb-4">
           <label htmlFor="customer" className="mb-2 block text-sm font-medium">
-            Choose customer
+            顧客を選択
           </label>
           <div className="relative">
             <select
@@ -25,7 +25,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
               defaultValue=""
             >
               <option value="" disabled>
-                Select a customer
+                顧客を選択
               </option>
               {customers.map((customer) => (
                 <option key={customer.id} value={customer.id}>
